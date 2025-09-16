@@ -3,13 +3,13 @@
   "name": "my-v0-project",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "build": "next build",
-    "predeploy": "npm run build",
+ "scripts": {
     "dev": "next dev",
-    "lint": "next lint",
+    "build": "next build",
     "start": "next start",
-    "deploy": "gh-pages -d out -t true"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+     "deploy": "gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
