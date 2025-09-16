@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  assetPrefix: './',
-  basePath: '/ruby',
+  basePath: '/ruby', // Apenas esta linha é necessária
   images: {
     unoptimized: true,
   },
